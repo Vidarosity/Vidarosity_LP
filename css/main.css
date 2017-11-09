@@ -1,7 +1,97 @@
 /*! vidarosity landingpage stylesheet */
 
-html {
+html,body {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    height:100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* fixes */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* columns */
+.c-8 {
+  width: 66.66%;
+  float: left;
+}
+
+.c-6 {
+  width: 50%;
+  float: left;
+}
+
+.c-3 {
+  width: 25%;
+  float: left;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+/* styling */
+
+nav{
+display: block;
+float:right;
+}
+nav ul{
+  padding: 2em;
+}
+nav ul li{
+  color: white;
+  display: inline-block;
+  list-style: none;
+  padding: 0 2em;
+}
+header{
+  color: white;
+  background: #311b92;
+  padding: 18em 4em;
+}
+.brand{
+  float: left;
+}
+.nice-box{
+  text-align: center;
+  padding: 4em;
+}
+
+
+/* buttons */
+.cta{
+font-size: .8em;
+color: white;
+background: transparent;
+border: 1px solid white;
+margin: 1em 0em;
+padding: 1em 2em;
+}
+.cta:hover{
+  color: black;
+  background: white;
+}
+
+/* responsive */
+
+@media (max-width:800px)  {
+  [class*='c-'] {
+    width: 100%;
+  }
+
 }
